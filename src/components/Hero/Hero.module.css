@@ -197,13 +197,7 @@
   margin-bottom: 1.5rem;
 }
 
-.btnDownload {
-  background: var(--gradient-accent) !important;
-  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.35) !important;
-}
-.btnDownload:hover {
-  box-shadow: 0 6px 28px rgba(244, 63, 94, 0.52) !important;
-}
+
 
 /* ── Location ─────────────────────────────────────── */
 .location {

@@ -89,7 +89,7 @@ export default function Hero() {
             <a
               href="/Lindsay_Gullon_Resume.pdf"
               download="Lindsay_Gullon_Resume.pdf"
-              className={`btn btn-primary ${styles.btnDownload}`}
+              className="btn btn-outline"
             >
               ↓ Download Resume
             </a>
