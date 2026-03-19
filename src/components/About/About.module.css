@@ -122,6 +122,15 @@
   color: var(--color-text-muted);
 }
 
+.photoCredit {
+  margin-top: 0.55rem;
+  font-size: 0.7rem;
+  color: var(--color-text-dim);
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
+}
+
 @media (max-width: 860px) {
   .grid {
     grid-template-columns: 1fr;

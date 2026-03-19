@@ -88,7 +88,7 @@ export default function About() {
             transition={{ duration: 0.65, ease: 'easeOut', delay: 0.1 }}
           >
             <div className={styles.imageCard}>
-              <img src={ucsdSvg} alt="UC San Diego campus illustration" className={styles.campusImg} />
+              <img src={ucsdSvg} alt="UC San Diego Geisel Library" className={styles.campusImg} />
               <div className={styles.imageOverlay}>
                 <img src={avatarSvg} alt="Lindsay's avatar" className={styles.avatarSmall} />
                 <div>
@@ -97,6 +97,9 @@ export default function About() {
                 </div>
               </div>
             </div>
+            <p className={styles.photoCredit}>
+              Photo by Erik Jepsen, UC San Diego Communications. Composition by Ben Tolo, SDSC Communications.
+            </p>
           </motion.div>
         </div>
       </div>
