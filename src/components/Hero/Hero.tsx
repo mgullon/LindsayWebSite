@@ -86,6 +86,13 @@ export default function Hero() {
             <button className="btn btn-primary" onClick={() => scrollTo('projects')}>
               View Projects ↓
             </button>
+            <a
+              href="/Lindsay_Gullon_Resume.pdf"
+              download="Lindsay_Gullon_Resume.pdf"
+              className={`btn btn-primary ${styles.btnDownload}`}
+            >
+              ↓ Download Resume
+            </a>
             <button className="btn btn-outline" onClick={() => scrollTo('contact')}>
               Get in Touch
             </button>
