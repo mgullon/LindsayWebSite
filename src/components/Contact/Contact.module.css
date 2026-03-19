@@ -1,0 +1,59 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.linkCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+}
+
+.linkIcon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.linkLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-dim);
+  margin-bottom: 0.15rem;
+}
+
+.linkDisplay {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-text);
+  word-break: break-all;
+}
+
+/* ── CTA ──────────────────────────────────────────── */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(124,58,237,0.1) 0%, rgba(59,130,246,0.08) 100%);
+  border: 1px solid rgba(124,58,237,0.2);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.ctaText {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 460px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

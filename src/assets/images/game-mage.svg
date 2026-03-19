@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="url(#bg)" rx="8"/>
+  <!-- Stars background -->
+  <circle cx="30" cy="30" r="1.5" fill="rgba(255,255,200,0.8)"/>
+  <circle cx="80" cy="15" r="1" fill="rgba(255,255,200,0.6)"/>
+  <circle cx="220" cy="25" r="1.2" fill="rgba(255,255,200,0.7)"/>
+  <circle cx="270" cy="10" r="1" fill="rgba(255,255,200,0.5)"/>
+  <circle cx="180" cy="40" r="0.8" fill="rgba(255,255,200,0.9)"/>
+  <!-- Mage (left side) -->
+  <!-- Hat -->
+  <polygon points="60,60 80,110 40,110" fill="#4c1d95"/>
+  <rect x="35" y="108" width="50" height="6" fill="#6d28d9" rx="2"/>
+  <!-- Robe -->
+  <ellipse cx="60" cy="135" rx="20" ry="30" fill="#7c3aed"/>
+  <!-- Face -->
+  <circle cx="60" cy="90" r="13" fill="#fde68a"/>
+  <!-- Eyes -->
+  <circle cx="56" cy="88" r="2" fill="#1e1b4b"/>
+  <circle cx="64" cy="88" r="2" fill="#1e1b4b"/>
+  <!-- Staff -->
+  <line x1="78" y1="75" x2="90" y2="145" stroke="#92400e" stroke-width="3"/>
+  <circle cx="78" cy="73" r="6" fill="#f59e0b" opacity="0.9"/>
+  <!-- Fireball from mage -->
+  <circle cx="140" cy="110" r="12" fill="#f97316" opacity="0.8"/>
+  <circle cx="140" cy="110" r="8" fill="#fbbf24"/>
+  <circle cx="140" cy="110" r="4" fill="white" opacity="0.7"/>
+  <!-- Dragon (right side) -->
+  <!-- Body -->
+  <ellipse cx="240" cy="130" rx="35" ry="22" fill="#16a34a"/>
+  <!-- Head -->
+  <ellipse cx="210" cy="105" rx="20" ry="16" fill="#15803d"/>
+  <!-- Eye -->
+  <circle cx="202" cy="102" r="4" fill="#fbbf24"/>
+  <circle cx="202" cy="102" r="2" fill="#1e1b4b"/>
+  <!-- Mouth/snout -->
+  <path d="M 195 110 L 205 115 L 195 120" fill="#166534" stroke="#14532d" stroke-width="1"/>
+  <!-- Wings -->
+  <path d="M 255 115 L 285 80 L 275 120 Z" fill="#166534" opacity="0.8"/>
+  <path d="M 255 120 L 285 155 L 275 125 Z" fill="#166534" opacity="0.8"/>
+  <!-- Tail -->
+  <path d="M 275 135 Q 295 130 290 150 Q 275 155 285 145" fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Fire from dragon -->
+  <ellipse cx="185" cy="108" rx="14" ry="8" fill="#ef4444" opacity="0.7"/>
+  <ellipse cx="175" cy="108" rx="9" ry="5" fill="#f97316" opacity="0.8"/>
+  <ellipse cx="167" cy="108" rx="5" ry="3" fill="#fbbf24" opacity="0.9"/>
+  <!-- Key hint -->
+  <rect x="42" y="168" width="28" height="16" fill="rgba(124,58,237,0.8)" rx="3"/>
+  <text x="56" y="180" font-family="monospace" font-size="9" fill="white" text-anchor="middle">Shift</text>
+  <rect x="230" y="168" width="28" height="16" fill="rgba(22,163,74,0.8)" rx="3"/>
+  <text x="244" y="180" font-family="monospace" font-size="9" fill="white" text-anchor="middle">Shift</text>
+  <text x="150" y="192" font-family="Inter,sans-serif" font-size="10" font-weight="600"
+        fill="rgba(134,239,172,0.9)" text-anchor="middle">Mopey Mage Maggins – 2-Player</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0a2010"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="200" fill="url(#bg)" rx="8"/>
+  <!-- Bounding box (detection) -->
+  <rect x="90" y="40" width="120" height="100" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="6,3"/>
+  <rect x="90" y="40" width="50" height="14" fill="#22c55e" rx="2"/>
+  <text x="96" y="51" font-family="monospace" font-size="9" fill="white">avocado 94%</text>
+  <!-- Tree trunk -->
+  <rect x="142" y="130" width="16" height="40" fill="#92400e" rx="3"/>
+  <!-- Tree canopy (main) -->
+  <ellipse cx="150" cy="90" rx="50" ry="55" fill="url(#leaf)" opacity="0.85"/>
+  <!-- Branch pattern -->
+  <line x1="150" y1="100" x2="120" y2="130" stroke="#15803d" stroke-width="2"/>
+  <line x1="150" y1="100" x2="180" y2="130" stroke="#15803d" stroke-width="2"/>
+  <line x1="150" y1="80" x2="130" y2="65" stroke="#15803d" stroke-width="1.5"/>
+  <line x1="150" y1="80" x2="170" y2="65" stroke="#15803d" stroke-width="1.5"/>
+  <!-- Avocados -->
+  <ellipse cx="125" cy="72" rx="8" ry="10" fill="#4d7c0f"/>
+  <ellipse cx="175" cy="72" rx="8" ry="10" fill="#4d7c0f"/>
+  <ellipse cx="150" cy="60" rx="7" ry="9" fill="#4d7c0f"/>
+  <!-- Scan lines (computer vision effect) -->
+  <line x1="90" y1="65" x2="210" y2="65" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <line x1="90" y1="85" x2="210" y2="85" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <line x1="90" y1="105" x2="210" y2="105" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <line x1="90" y1="125" x2="210" y2="125" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <!-- Corner markers -->
+  <polyline points="90,48 90,40 98,40" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <polyline points="202,48 202,40 210,40 210,48" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <polyline points="90,132 90,140 98,140" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <polyline points="202,132 202,140 210,140" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <!-- Side panel -->
+  <rect x="225" y="35" width="65" height="130" fill="rgba(0,0,0,0.5)" rx="4"/>
+  <text x="232" y="52" font-family="monospace" font-size="8" fill="#22c55e">mAP: 0.91</text>
+  <text x="232" y="65" font-family="monospace" font-size="8" fill="#22c55e">Prec: 0.94</text>
+  <text x="232" y="78" font-family="monospace" font-size="8" fill="#22c55e">Recall: 0.89</text>
+  <rect x="232" y="88" width="50" height="6" fill="rgba(34,197,94,0.3)" rx="2"/>
+  <rect x="232" y="88" width="45" height="6" fill="#22c55e" rx="2" opacity="0.8"/>
+  <text x="232" y="110" font-family="monospace" font-size="8" fill="#6ee7b7">Conf Matrix</text>
+  <rect x="232" y="115" width="20" height="15" fill="rgba(34,197,94,0.7)" rx="1"/>
+  <rect x="255" y="115" width="20" height="15" fill="rgba(239,68,68,0.3)" rx="1"/>
+  <rect x="232" y="133" width="20" height="15" fill="rgba(239,68,68,0.3)" rx="1"/>
+  <rect x="255" y="133" width="20" height="15" fill="rgba(34,197,94,0.7)" rx="1"/>
+  <text x="150" y="190" font-family="Inter,sans-serif" font-size="10" font-weight="600"
+        fill="rgba(134,239,172,0.9)" text-anchor="middle">ESB.AI Lab – AvoVision Research</text>
+</svg>
