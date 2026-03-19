@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { personal } from '../../data/resumeData';
 import avatarSvg from '../../assets/images/avatar.jpg';
-import ucsdSvg from '../../assets/images/ucsd-campus.svg';
+import ucsdSvg from '../../assets/images/ucsd-campus.jpg';
 import styles from './About.module.css';
 
 const fadeUp = {
