@@ -19,9 +19,23 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.58, ease: 'easeOut' } },
 };
 
+const linkLabels: Record<string, string> = {
+  'lindsaygullon.itch.io': 'Play on itch.io ↗',
+  'www.udemy.com': 'View Course ↗',
+};
+
+function linkLabel(url: string): string {
+  try {
+    const host = new URL(url).hostname;
+    return linkLabels[host] ?? 'Visit ↗';
+  } catch {
+    return 'Visit ↗';
+  }
+}
+
 function ProjectCard({ project }: { project: ProjectEntry }) {
   const img = projectImages[project.title];
-  const hasLink = project.url !== '#';
+  const hasLink = Boolean(project.url);
 
   return (
     <motion.article className={`card ${styles.card}`} variants={cardVariants} whileHover={{ y: -6 }}>
@@ -31,7 +45,7 @@ function ProjectCard({ project }: { project: ProjectEntry }) {
           <img src={img} alt={`${project.title} screenshot`} className={styles.thumbnailImg} />
         ) : (
           <div className={styles.thumbnailPlaceholder}>
-            <span>{project.title[0]}</span>
+            <span>{project.placeholder ?? project.title[0]}</span>
           </div>
         )}
         <div className={styles.contextBadge}>{project.context}</div>
@@ -59,7 +73,7 @@ function ProjectCard({ project }: { project: ProjectEntry }) {
             rel="noopener noreferrer"
             className={styles.linkBtn}
           >
-            Play on itch.io ↗
+            {linkLabel(project.url)}
           </a>
         )}
       </div>

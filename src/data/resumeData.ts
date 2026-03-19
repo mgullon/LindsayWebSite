@@ -105,6 +105,8 @@ export interface ProjectEntry {
   url: string;
   tags: string[];
   period: string;
+  /** Short label shown in the thumbnail when no image is available */
+  placeholder?: string;
 }
 
 export const projects: ProjectEntry[] = [
@@ -131,7 +133,8 @@ export const projects: ProjectEntry[] = [
     context: 'Udemy',
     description:
       'The Complete Python Pro Bootcamp — intensive self-directed study covering Python from fundamentals through advanced topics including automation, data science, and web development.',
-    url: '#',
+    url: 'https://www.udemy.com/course/100-days-of-code/',
+    placeholder: 'Python',
     tags: ['Python', 'Self-Study', 'Automation', 'Data Science'],
     period: 'Jul 2025 – Present',
   },
@@ -140,7 +143,8 @@ export const projects: ProjectEntry[] = [
     context: 'Udemy',
     description:
       'Comprehensive full-stack web development course covering HTML, CSS, JavaScript, Node.js, Express, and MongoDB to build production-ready web applications.',
-    url: '#',
+    url: 'https://www.udemy.com/course/the-complete-web-development-bootcamp/',
+    placeholder: 'Web Dev',
     tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Full-Stack'],
     period: 'Jul 2025 – Present',
   },
